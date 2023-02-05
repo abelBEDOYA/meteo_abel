@@ -1,9 +1,6 @@
 import matplotlib.pyplot as plt
-import cv2
 import pandas as pd
 import numpy as np
-
-
 
 
 df = pd.read_csv('./meteo.csv')
@@ -18,4 +15,5 @@ plt.plot(lluviaM)
 plt.ylabel('lluvia / mm')
 plt.xlabel('tiempo/ u.a.')
 plt.title('Lluvia en Lisboa frente al tiempo')
-plt.show()
+# plt.show()
+plt.savefig('preci_lisboa.png', dpi=200)
